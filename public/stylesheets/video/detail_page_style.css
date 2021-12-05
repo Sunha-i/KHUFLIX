@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    word-break: keep-all;
   }
   
   /* .background {
@@ -19,10 +20,10 @@
     margin:0px auto;
     margin-top: 10px;
     width: 850px;
-    height: 479px;
+    height: 480px;
     /* object-fit: cover;
     object-position: top; */
-    background : linear-gradient(to top, #181818, transparent 70%), url('../../images/detail/video.jpg');
+    background : linear-gradient(to top, #181818, transparent 70%), url('detail/video.jpg');
     background-size: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -30,13 +31,18 @@
 
   .logo{
     width: 340px;
+    margin: 0px 0px 18px;
   }
 
+  .buttons{
+    margin: 0px 0px 16px;
+  }
   .play{
     width: 106px;
     height: 38.5px;
     font-size: 15px;
     border-radius: 6px;
+    margin-right: 3px;
     border: none;
     color: black;
     background-color: white; 
@@ -50,13 +56,22 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin: 1px;
     border-color: rgba(255,255,255,0.5);
     background-color: #2A2A2A99;
+    cursor: pointer;
   }
 
   i{
     font-size: 15px;
     color: rgba(255,255,255,0.5);
+  }
+  .close{
+    border: 0;
+    background-color: #222;
+  }
+  .close:hover{
+    background-color: #777;
   }
 
   #mute{
@@ -73,31 +88,30 @@
 
   .infopart{
     width: 754px;
-    height: 2000px;
+    height: 1500px;
     margin: 0px auto;
     padding: 0px 48px;
     background-color: #181818;
   }
-
-  .details{
-    display: block;
+  .section1{
+    display: flex;
+    padding-top: 5px;
   }
-
+  
   .left{
     padding: 16px 5px 5px 0px;
     float: left;
-    width:58%;
+    width:63%;
     box-sizing: border-box;
   }
-
   .right{
-    padding: 16px 0px 20px 58px;
-    float: right;
-    width:42%;
+    padding: 16px 0px 20px 0px;
+    width:32%;
+    margin-left: auto;
     box-sizing: border-box;
   }
 
-  .text{
+  .detail{
     display: block;
     margin: 18px 0px 9px;
     font-size: 18px;
@@ -122,14 +136,49 @@
     margin-top: 24px;
   }
 
+
+  /* TAB */
   
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"] + label {
+    display: inline-block;
+    padding: 40px 20px 15px;
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked + label{
+    color: #FFFFFF;
+    border-bottom: 2px solid #999;
+  }
+  input[type="radio"] + label:hover{
+    text-shadow: 0px 0px 2.5px #999;
+  }
+  input[type="radio"]:checked + label:hover{
+    text-shadow: none;
+  }
+  .conbox{
+    display: none;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  input[id="tab01"]:checked ~ .con1 {display: block;}
+  input[id="tab02"]:checked ~ .con2 {display: block;}
+  input[id="tab03"]:checked ~ .con3 {display: block;}
+  
+
   /* OST */
+
 
   *{margin: 0; padding: 0;}
 
   .center{
     width: 190px;
-    margin: 80px auto 0;
+    margin: 20px auto 0;
     position: relative;
   }
 
@@ -140,10 +189,10 @@
   }
 
   .cover{
-    position: absolute;
     width: 200px;
     border-radius: 1px;
     /* transform: translateX(-40px); */
+    border-radius: 0.5em;
     box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
   }
 
@@ -153,16 +202,6 @@
   .vinyl{transform: translateX(0px); transition: all 0.8s ease;}
   .cover{transform: translateX(0px); transition: all 0.8s ease;}
 
-  .track_t{
-    width: 714px;
-    height: 20px;
-    padding: 20px;
-    color: #FFFFFF;
-    border-radius: 0.25em;
-    background-color: #333333;
-    margin: 330px auto 0;
-  }
-  
   .track{
     width: 714px;
     height: 20px;
@@ -170,6 +209,12 @@
     color: #FFFFFF;
     border-bottom: 1px solid #333333;
     background: none;
+  }
+  .first_t{
+    color: #FFFFFF;
+    border-radius: 0.25em;
+    background-color: #333333;
+    margin: 20px auto 0;
   }
 
   .number{
@@ -212,53 +257,67 @@
 
   /* episode */
 
-  .epi{
-    width: 714px;
-    height: 124px;
-    padding: 20px;
+  #es{
     color: #FFFFFF;
-    border-radius: 0.25em;
-    background-color: #333333;
-    margin: 30px auto 0;
-    display: flex;
+    font-size: 24px;
+    margin: 40px 0px 20px;
   }
 
+  .epi{
+    box-sizing: border-box;
+    width: 100%;
+    height: 154px;
+    padding: 16px;
+    color: #FFFFFF;
+    border-radius: 0.25em;
+    border-bottom: 1px solid #404040;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+  }
+  .first_e{
+    background-color: #333333;
+  }
+
+  .out_box{
+    display: table;
+  }
+  .in_box{
+    display: table-cell;
+    vertical-align: middle;
+  }
   .e_number{
     text-align: center;
     float: left;
-    width: 6%;
+    width: 6.5%;
+  }
+  .e_num{
+    font-size: 24px;
+    color: #d2d2d2;
   }
 
   .thumbnail{
     float: left;
-    width: 18%;
+    width: 17.5%;
   }
-
   .thumb{
-    width: 130px;
+    width: 100%;
     height: auto;
+    border-radius: 0.25em;
   }
   
   .text{
     float: left;
     width: 70%;
   }
-
   .e_title{
+    display: flex;
     padding: 16px 16px 8px;
+    justify-content: space-between;
   }
-
   .story{
     font-size: 16px;
-    float: left;
-    width: 50%;
-  }
-
-  .time{
-    text-align: right;
-    font-size: 16px;
-    float: right;
-    width: 50%;
+    font-weight: bold;
   }
 
   .summary{
@@ -272,25 +331,3 @@
     width: 6%;
   }
 
-  
-  /* .e_number{
-    
-    width: 10%;
-    text-align: center;
-    font-weight: bold;
-    box-sizing: border-box;
-    font-size: 24px;
-    color: #FFFFFF;
-  }
-
-  
-
-  .e_title{
-    width: 60%;
-  }
-
-  
-
-  .summary{
-    color: #D2D2D2;
-  } */
