@@ -1,9 +1,8 @@
-# <img width="13.5%" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/a9347ca7-e2d0-467b-b94b-61e6834b04df"/> using AWS, Node js
+# <img width="13.5%" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/773d29ad-31ea-4e3d-bc87-9359f90c76d0"/> using AWS, Node js
 > <samp>[2021-2] OpenSource SW Development Team Project ✘</samp><code>2021.9.18 ~ 2021.12.11</code>
 
 ## 👀 Preview
-
-|<img width="1552" alt="first_page" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/9f721021-f400-4ade-9f47-c9477fda31bd">|<img width="1552" alt="main_page" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/8d5226dd-77d1-4d1f-93f6-f89e06cd0ed0">|
+|<img width="1552" alt="first_page" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/00203b86-1c08-4883-becf-dae0252f215c">|<img width="1552" alt="main_page" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/17466c49-f979-4801-9235-dea911d1e07c">|
 |---|---|
 
 [🔗_더보기](https://tothelune.tistory.com/141)  
