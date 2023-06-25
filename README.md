@@ -1,8 +1,11 @@
-# KhuFlix using AWS, Node js
-> 경희대학교 컴퓨터공학과 이아영 박선하 임윤희
+# <img width="13.5%" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/6af0fca5-0e2a-43de-b3f2-4ad3a4ba9f45"/> using AWS, Node js
+> <samp>[2021-2] OpenSource SW Development Team Project</samp>➰<code>2021.9.18 ~ 2021.12.11</code>  
 
-<img src="/uploads/fc33f0c989bfb6ebfd5049a5346ad4ba/KHUFLIX.PNG" width=27%/>
+## 👀 Preview
+|<img width="1552" alt="first_page" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/bad3d95f-19bf-492d-ae92-33ccb1350c92">|<img width="1552" alt="main_page_110" src="https://github.com/Sunha-i/KHUFLIX/assets/74592552/d3af6edd-e08f-4e59-8866-4f89030c78ff">|
+|---|---|
 
+[🔗_더보기](https://tothelune.tistory.com/141)  
 
 ## :heart: KhuFlix
 - Node.js를 사용한 Netflix와 유사한 서비스 만들어보기 
@@ -74,7 +77,7 @@ module.exports={
 
 ## :star2: Install
 ```sh
-npm insatll
+npm install
 ```
 
 ## :alien: Run program
